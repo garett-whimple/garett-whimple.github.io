@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Camilla Andelin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscripts.js"></script>
+</head>
+
+<body onload = "showSlides(1)">
+    
+    <div class="container">
+        <header class="header">
+            <a href="/Users/garet/OneDrive/Desktop/Code/Web%20Development/Test%20Website/main.html" class="header-branding">CAMILLA ANDELIN</a>
+        </header>
+        <nav class="nav">
+            <div class="nav-container" >
+                <div>
+                    <a>Home</a>
+                </div>
+                <div>
+                    <a>Bio</a>
+                </div>
+                <div>
+                    <a>Media</a>
+                </div>
+                <div>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main-grid-container">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img id="img1" src="/Users/garet/OneDrive/Desktop/Code/Web%20Development/Test%20Website/Media/pretty_picture2.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img id="img2" src="/Users/garet/OneDrive/Desktop/Code/Web%20Development/Test%20Website/Media/pretty_picture.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img id="img3" src="/Users/garet/OneDrive/Desktop/Code/Web%20Development/Test%20Website/Media/pretty_picture3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img id="img3" src="/Users/garet/OneDrive/Desktop/Code/Web%20Development/Test%20Website/Media/pretty_picture4.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <span id="dot1" class="dot" onclick="currentSlide(1)"></span>
+                    <span id="dot2" class="dot" onclick="currentSlide(2)"></span>
+                    <span id="dot3" class="dot" onclick="currentSlide(3)"></span>
+                    <span id="dot4" class="dot" onclick="currentSlide(4)"></span>
+
+                  </div>
+
+
+
+                <video class="grid-videos" controls width="500">
+                    <source src="/Users/garet/OneDrive/Desktop/Code/Web%20Development/Test%20Website/Media/2022-08-04-0833-36_Trim.mp4">
+                </video>
+                <video class="grid-videos" controls>
+                    <source src="/Users/garet/OneDrive/Desktop/Code/Web%20Development/Test%20Website/Media/20220620_191737.mp4">
+                </video>
+            </div>
+            <p id="contact" class="contact">Contact</p>
+            <div class="contact-container">            
+                <p class="contact-info">Phone: +1 801-310-2533</p>
+                <p class="contact-info">Email: andelinmilla@gmail.com</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="social-media-symbol-container">
+                <a class="social-media-symbol" href="https://www.instagram.com/milla_andelin/?hl=en"> 
+                    <img src="Media/Social Media/Instagram.webp" alt="instagram logo" width="100">
+                </a>
+                <a class="social-media-symbol" href="https://www.facebook.com/camilla.andelin"> 
+                    <img src="Media/Social Media/facebook.png" alt="facebook logo" width="100">
+                </a>
+                <a class="social-media-symbol" href="https://www.linkedin.com/in/camilla-andelin-95099298"> 
+                    <img src="Media/Social Media/linkedin.png" alt="linkedin logo" width="100">
+                </a>
+                <a class="social-media-symbol" href="https://www.youtube.com/channel/UCsKKKLmIq176iysqKIXxtFw"> 
+                    <img src="Media/Social Media/Youtube.png" alt="Youtube logo" width="100">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

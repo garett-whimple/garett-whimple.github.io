@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'cinzelregular';
+    src: url('cinzel-variablefont_wght-webfont.woff2') format('woff2'),
+         url('cinzel-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing:border-box
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 1500px;
+    background: white;
+}
+
+header {
+    flex: 0 1 4%;
+    background-color: white;
+    padding: 15px 14px;
+    text-align: center;
+}
+
+.header-branding {
+    font: 400 75px "cinzelregular";
+    letter-spacing: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-container a {
+    flex: 0 1 25%;
+    padding: 2px 12px;
+    font: 100 13px raleway,sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    flex: 0 1 2%;
+    background-color: white;
+    text-align: center;
+}
+
+main {
+    flex: 0 1 77%;
+    background-color: white;
+}
+
+.main-grid-container {
+    max-width: auto;
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 10px;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.slideshow-container {
+    grid-row: 1 / 3;
+    max-width: 430px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dot1 {
+    position: absolute;
+    top: 92.5%;
+    left: 42.5%;
+}
+
+#dot2 {
+    position: absolute;
+    top: 92.5%;
+    left: 47.5%;
+}
+
+#dot3 {
+    position: absolute;
+    top: 92.5%;
+    left: 52.5%;
+}
+
+#dot4 {
+    position: absolute;
+    top: 92.5%;
+    left: 57.5%;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.grid-videos {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact {
+    font: 500 75px arial;
+    text-align: center;
+}
+
+.contact-container {
+    width: 600px;
+    height: 200px;
+    position: relative;
+    left: 20%;
+}
+
+.contact-info {
+    font: 100 40px arial;
+    text-align: left;
+}
+
+footer {
+    flex: 0 1 10%;
+    background-color: white;
+    justify-content: center;
+}
+
+.social-media-symbol-container {
+    width: 700px;
+    height: 200px;
+    justify-self: center;
+    padding: 20px;
+    position: absolute;
+    left: 34%;
+}
+
+.social-media-symbol {
+    padding: 10px
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
